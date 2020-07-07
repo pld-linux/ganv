@@ -1,12 +1,12 @@
 Summary:	Interactive Gtk canvas widget for graph-based interfaces
 Summary(pl.UTF-8):	Interaktywny widget płótna Gtk dla interfejsów opartych na grafach
 Name:		ganv
-Version:	1.4.2
+Version:	1.6.0
 Release:	1
 License:	GPL v3+
 Group:		Libraries
 Source0:	http://download.drobilla.net/%{name}-%{version}.tar.bz2
-# Source0-md5:	30c2c36d0c64d0a3b73e0bc7c564861c
+# Source0-md5:	b27d5e3687cc43baef8055506ac2fded
 URL:		http://drobilla.net/software/ganv/
 BuildRequires:	gettext-devel
 BuildRequires:	gobject-introspection-devel
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS NEWS README
+%doc AUTHORS NEWS README.md
 %attr(755,root,root) %{_bindir}/ganv_bench
 %attr(755,root,root) %{_libdir}/libganv-1.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libganv-1.so.1
